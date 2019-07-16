@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/type_view"
+        android:layout_width="@dimen/type_width"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/sensor_name_label"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/info_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/initial_info_label"
+        android:textSize="@dimen/small_text_size"
+        app:layout_constraintStart_toEndOf="@id/type_view"
+        app:layout_constraintBottom_toBottomOf="@id/type_view" />
+
+    <jp.ac.titech.itpro.sdl.sensorviz.GraphView
+        android:id="@+id/x_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin"
+        app:layout_constraintBottom_toTopOf="@id/y_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/type_view" />
+
+    <TextView
+        android:id="@+id/x_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/x_label"
+        android:textSize="@dimen/small_text_size"
+        app:layout_constraintStart_toStartOf="@id/x_view"
+        app:layout_constraintTop_toTopOf="@id/x_view" />
+
+    <jp.ac.titech.itpro.sdl.sensorviz.GraphView
+        android:id="@+id/y_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin"
+        app:layout_constraintBottom_toTopOf="@id/z_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/x_view" />
+
+    <TextView
+        android:id="@+id/y_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/y_label"
+        android:textSize="@dimen/small_text_size"
+        app:layout_constraintStart_toStartOf="@id/y_view"
+        app:layout_constraintTop_toTopOf="@id/y_view" />
+
+    <jp.ac.titech.itpro.sdl.sensorviz.GraphView
+        android:id="@+id/z_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/y_view" />
+
+    <TextView
+        android:id="@+id/z_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/z_label"
+        android:textSize="@dimen/small_text_size"
+        app:layout_constraintStart_toStartOf="@id/z_view"
+        app:layout_constraintTop_toTopOf="@id/z_view" />
+
+</android.support.constraint.ConstraintLayout>

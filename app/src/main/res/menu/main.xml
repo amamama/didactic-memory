@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_delay"
+        android:orderInCategory="101"
+        android:title="@string/menu_delay_normal"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_accelerometer"
+        android:orderInCategory="105"
+        android:title="@string/menu_accelerometer" />
+    <item
+        android:id="@+id/menu_gyroscope"
+        android:orderInCategory="106"
+        android:title="@string/menu_gyroscope" />
+    <item
+        android:id="@+id/menu_magnetic_field"
+        android:orderInCategory="107"
+        android:title="@string/menu_magnetic_field" />
+
+</menu>

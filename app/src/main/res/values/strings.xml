@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SensorViz</string>
+
+    <string name="menu_delay_fastest">Fastest</string>
+    <string name="menu_delay_game">Game</string>
+    <string name="menu_delay_ui">UI</string>
+    <string name="menu_delay_normal">Normal</string>
+
+    <string name="menu_accelerometer">Accelerometer</string>
+    <string name="menu_gyroscope">Gyroscope</string>
+    <string name="menu_magnetic_field">Magnetic field</string>
+
+    <string name="sensor_name_label">Accelerometer</string>
+    <string name="initial_info_label">(info)</string>
+    <string name="info_format">accuracy: %d, rate: %5d</string>
+
+    <string name="x_label">X</string>
+    <string name="y_label">Y</string>
+    <string name="z_label">Z</string>
+
+    <string name="toast_no_sensor_manager">No sensor manager</string>
+    <string name="toast_no_sensor_available">No sensor available: %s</string>
+</resources>
